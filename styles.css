@@ -1,0 +1,20 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+ html, body, .container-table {
+    height: 100%;
+}
+.container-table {
+    display: inline-block;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
