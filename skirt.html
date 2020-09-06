@@ -1,55 +1,59 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="styles.css?v=1.0">
+    <title>Hello, world!</title>
+  </head>
+  <body>
 
-</head>
 
-<body>
-  <script src="scripts.js"></script>
-</body>
+    <h1>Circle Skirt Project</h1>
+    <div id="totalRadius">
+    Waist Measurment: <input type="number" id="waistMeasure" placeholder=28 onchange="getWaist()"><br><br>
+    Skirt Fullness:
+    <button id="wrap" type="button" class="btn btn-secondary btn-lg" onclick="skirtFullness(wrap)" value=wrap>Wrap</button>
+    <button id="full" type="button" class="btn btn-secondary btn-lg" onclick="skirtFullness(full)" value=full>Full</button>
+    <button id="half" type="button" class="btn btn-secondary btn-lg" onclick="skirtFullness(half)" value=half" value=wrap>Half</button>
+    <button id="quarter" type="button" class="btn btn-secondary btn-lg" onclick="skirtFullness(quarter)" value=quarter>Quarter</button>
+
+    <br><br> 
+    
+    </div>
+    
+    Desired Length 
+    <button id="mini" type="button" class="btn btn-secondary btn-lg" onclick="skirtLength(20)" value=20>Mini 20"</button>
+    <button id="midi" type="button" class="btn btn-secondary btn-lg" onclick="skirtLength(25)" value=25>Midi 25"</button>
+    <button id="maxi" type="button" class="btn btn-secondary btn-lg" onclick="skirtLength(40)" value=40>Maxi 45"</button>
+    <!-- Custom Length <input type="number" id="customLength" placeholder=50 onChange="skirtLength()"><br><br> -->
+    <br><br><br>
+    
+    
+    Radius = 
+    <p id="radius"></p>
+    <br>
+    Desired Length = 
+    <p id="returnLength"></p>
+    <br>
+    Fabric Required = 
+    <p id="fabricReq"></p>
+    
+    <br>
+    <br><br>
+    <i>* Seam Allowance not included!</i>
+    </div>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
-
-<h1>Circle Skirt Project</h1>
-<div id="totalRadius">
-Waist Measurment: <input type="number" id="waistMeasure" placeholder=28 onchange="getWaist()"><br><br>
-Skirt Fullness:
-<button id="wrap" onclick="skirtFullness(wrap)" value=wrap>Wrap</button>
-<button id="full" onclick="skirtFullness(full)" value=full>Full</button>
-<button id="half" onclick="skirtFullness(half)" value=half>Half</button>
-<button id="quarter" onclick="skirtFullness(quarter)" value=quarter>Quarter</button>
-<br><br> 
-
-</div>
-
-Desired Length 
-<button onclick="skirtLength(20)">Mini 20"</button>
-<button onclick="skirtLength(25);">Midi 25"</button>
-<button onclick="skirtLength(45);">Maxi 45"</button>
-<!-- Custom Length <input type="number" id="customLength" placeholder=50 onChange="skirtLength()"><br><br> -->
-<br><br><br>
-
-
-Radius = 
-<p id="radius"></p>
-<br>
-Desired Length = 
-<p id="returnLength"></p>
-<br>
-Fabric Required = 
-<p id="fabricReq"></p>
-
-<br>
-<br><br>
-<i>* Seam Allowance not included!</i>
-</div>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
