@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css?v=1.0">
+
+</head>
+
+<body>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+<h1>Circle Skirt Project</h1>
+<div id="totalRadius">
+Waist Measurment: <input type="number" id="waistMeasure" placeholder=28 onchange="getWaist()"><br><br>
+Skirt Fullness:
+<button id="wrap" onclick="skirtFullness(wrap)" value=wrap>Wrap</button>
+<button id="full" onclick="skirtFullness(full)" value=full>Full</button>
+<button id="half" onclick="skirtFullness(half)" value=half>Half</button>
+<button id="quarter" onclick="skirtFullness(quarter)" value=quarter>Quarter</button>
+<br><br> 
+
+</div>
+
+Desired Length 
+<button onclick="skirtLength(20)">Mini 20"</button>
+<button onclick="skirtLength(25);">Midi 25"</button>
+<button onclick="skirtLength(45);">Maxi 45"</button>
+<!-- Custom Length <input type="number" id="customLength" placeholder=50 onChange="skirtLength()"><br><br> -->
+<br><br><br>
+
+
+Radius = 
+<p id="radius"></p>
+<br>
+Desired Length = 
+<p id="returnLength"></p>
+<br>
+Fabric Required = 
+<p id="fabricReq"></p>
+
+<br>
+<br><br>
+<i>* Seam Allowance not included!</i>
+</div>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
