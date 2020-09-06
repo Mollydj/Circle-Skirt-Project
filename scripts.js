@@ -3,7 +3,7 @@ function getWaist() {
     console.log(waist);
     return waist;
   }
-  getWaist();
+
  
  var pi = Math.PI;
  // var wrap = (getWaist * 1.5) / (2 * pi);
@@ -26,7 +26,7 @@ function getWaist() {
  
  
   function skirtFullness(radius){ 
-    
+  
     getWaist();
     
     
