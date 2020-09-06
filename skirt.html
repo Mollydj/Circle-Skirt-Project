@@ -37,7 +37,7 @@
           <div class="card-deck">
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Wrap</h5>
                 <p class="card-text">Make a circle skirt with a waist large enough to wrap around your body 1.5 times!</p>
                 <button id="wrap" type="button" class="btn btn-secondary btn-lg" onclick="skirtFullness(wrap)" value=wrap>Wrap</button>
@@ -45,26 +45,26 @@
             </div>
             <div class="card">
                 <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Full</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">Make a circle skirt with a waist large enough to wrap around your body 1.5 times!</p>
                 <button id="full" type="button" class="btn btn-secondary btn-lg" onclick="skirtFullness(full)" value=full>Full</button>
               </div>
             </div>
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Half</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text">Make a circle skirt with a waist large enough to wrap around your body 1.5 times!</p>
                 <button id="half" type="button" class="btn btn-secondary btn-lg" onclick="skirtFullness(half)" value=half" value=wrap>Half</button>
               </div>
             </div>
 
             <div class="card">
                 <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Quarter</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text">Make a circle skirt with a waist large enough to wrap around your body 1.5 times!</p>
                   <button id="quarter" type="button" class="btn btn-secondary btn-lg" onclick="skirtFullness(quarter)" value=quarter>Quarter</button>
                 </div>
               </div>
@@ -90,7 +90,7 @@
     <div class="card-deck">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">Mini</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         <button id="mini" type="button" class="btn btn-secondary btn-lg" onclick="skirtLength(20)" value=20>Mini 20"</button>
@@ -98,7 +98,7 @@
     </div>
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">Midi</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         <button id="midi" type="button" class="btn btn-secondary btn-lg" onclick="skirtLength(25)" value=25>Midi 25"</button>
@@ -106,7 +106,7 @@
     </div>
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">Maxi</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         <button id="maxi" type="button" class="btn btn-secondary btn-lg" onclick="skirtLength(40)" value=40>Maxi 45"</button>
@@ -116,7 +116,7 @@
     <!-- Custom Length <input type="number" id="customLength" placeholder=50 onChange="skirtLength()"><br><br> -->
     <br><br><br>
     
-    
+    <span id="result">
     Radius = 
     <p id="radius"></p>
     <br>
@@ -125,7 +125,7 @@
     <br>
     Fabric Required = 
     <p id="fabricReq"></p>
-    
+  </span>
     <br>
     <br><br>
     <i>* Seam Allowance not included!</i>
