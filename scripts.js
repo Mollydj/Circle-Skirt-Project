@@ -1,53 +1,64 @@
 function getWaist() {
   const waist = Number(document.getElementById("waistMeasure").value);
-  console.log(waist);
   return waist;
 }
-getWaist();
 
+
+console.log(getWaist.length);
 var pi = Math.PI;
-// var wrap = (getWaist * 1.5) / (2 * pi);
-// var full = (getWaist() / (2 * pi));
-// var half = (getWaist() / pi);
-// var quarter = (getWaist() / (pi / 2));
 
-function skirtLength(length){
- 
-console.log(length);
-document.getElementById("returnLength").innerHTML = length + '"';
-//Wrap
-document.getElementById("fabricReq").innerHTML = ((getWaist() * 1.5) / (2 * pi) + length).toFixed(2) + '"';  
-//Full
-document.getElementById("fabricReq").innerHTML = ((getWaist() / (2 * pi)) + length).toFixed(2) + '"';
-//Half
-document.getElementById("fabricReq").innerHTML = ((getWaist() / pi) + length).toFixed(2) + '"';
-//Quarter
-document.getElementById("fabricReq").innerHTML = ((getWaist() / (pi / 2)) + length).toFixed(2) + '"';
- 
 
+function mini() {
+  document.getElementById("userLength").value = 20;
+}
+
+function midi() {
+    document.getElementById("userLength").value = 25;
+}
+
+function maxi() {
+    document.getElementById("userLength").value = 40;
 }
 
 
-function skirtFullness(radius){ 
-  
+
+function skirtFullness(radius) {
   getWaist();
+
+  var length = document.getElementById("userLength").value ;
+
   
+  var wrapSkirt = (((getWaist() * 1.5) / (2 * pi))).toFixed(1);
+  var fullSkirt = (getWaist() / (2 * pi)).toFixed(1);
+  var halfSkirt = ((getWaist() / pi)).toFixed(1);
+  var quarterSkirt = ((getWaist() / (pi / 2))).toFixed(1);
+
   
   if (radius === wrap) {
-    document.getElementById("radius").innerHTML = ((getWaist() * 1.5) / (2 * pi)).toFixed(2) + '"';
     console.log("wrap");
+    document.getElementById("radius").innerHTML =  wrapSkirt + ' in.';
+    document.getElementById("returnLength").innerHTML = length + ' in.';
+    document.getElementById("fabricReq").innerHTML =  parseFloat(length) + parseFloat(wrapSkirt) ;
   } else if (radius === full) {
-    document.getElementById("radius").innerHTML = (getWaist() / (2 * pi)).toFixed(2) + '"';
     console.log("full");
+    document.getElementById("radius").innerHTML =  fullSkirt + ' in.';
+    document.getElementById("returnLength").innerHTML = length + ' in.';
+    document.getElementById("fabricReq").innerHTML =  parseInt(fullSkirt) + parseInt(length);
     
   } else if (radius === half) {
-    document.getElementById("radius").innerHTML = (getWaist() / pi).toFixed(2) + '"';
     console.log("half");
+    document.getElementById("radius").innerHTML =  halfSkirt + ' in.';
+    document.getElementById("returnLength").innerHTML = length + ' in.';
+    document.getElementById("fabricReq").innerHTML =  parseInt(halfSkirt) + parseInt(length);
     
   } else if (radius === quarter) {
-    document.getElementById("radius").innerHTML = (getWaist() / (pi / 2)).toFixed(2) + '"';
     console.log("quarter");
+    document.getElementById("radius").innerHTML =  quarterSkirt + ' in.';
+    document.getElementById("returnLength").innerHTML = length + ' in.';
+    document.getElementById("fabricReq").innerHTML =  parseInt(quarterSkirt) + parseInt(length);
   }
-// console.log(radius);
-// document.getElementById("radius").innerHTML = radius.value;
-} 
+  // console.log(radius);
+  // document.getElementById("radius").innerHTML = radius.value;
+}
+
+getWaist();
